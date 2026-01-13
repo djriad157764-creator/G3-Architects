@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+/* shared style */
+.display-flex {
+  display: flex;
+}
+/* dark 02 */
+.text-gray {
+  color: #424242;
+}
+/* dark 03 */
+.light-gray {
+  color: #727272;
+}
+.bg-color {
+  background: rgba(255, 144, 14, 0.1);
+}
+.btn-primary {
+  font-size: 1.25rem;
+  font-weight: 600;
+  background: #ff900e;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 20px 25px;
+  margin-bottom: 50px;
+}
+
+/* header style */
+
+/* navbar related style */
+.brand {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  gap: 70px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.navbar,
+.banner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* banner related style */
+
+.banner-container {
+  max-width: 862px;
+  margin: 0 auto;
+  text-align: center;
+}
+.banner-heading {
+  font-size: 4.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.banner-desticribon {
+  font-size: 1rem;
+  line-height: 20px;
+  margin-bottom: 32px;
+}
+.banner-image {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 45px;
+}
+
+/* main image-container related style */
+
+.photo-section {
+  gap: 73px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 85px;
+}
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.paragrap-section {
+  max-width: 530px;
+}
+.feature-title {
+  font-size: 2.81rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+.paragrap-section .quick {
+  font-weight: 500;
+}
+.paragrap-section .features {
+  color: #ff900e;
+}
+.paragrap-section p {
+  font-size: 1rem;
+  line-height: 26px;
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav-link,
+  .photo-section {
+    flex-direction: column;
+  }
+  .image-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .paragrap-section {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  .photo-section,
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar,
+  .banner {
+    width: 100%;
+  }
+}
