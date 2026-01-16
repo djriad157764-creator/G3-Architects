@@ -189,17 +189,18 @@ main> section {
 .card-cointainer{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap:124px ;
+  gap:100px ;
+  padding-left: 50px;
 }
 .card-cointainer .card{
   border: 1px solid #ff900e;
   border-radius: 8px;
   padding: 45px 34px;
   text-align: center;
-  margin-left: 50px;
+  margin-left 50px;
   margin-bottom: 150px;
-  width: 241px;
-  height: 241px;
+  width: 242px;
+  height: 242px;
 }
 .card img {
   width: 45.22px;
@@ -237,7 +238,7 @@ main> section {
 .sponsor-image{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 155px;
+  gap: 130px;
   filter: grayscale(100%);
 }
 
