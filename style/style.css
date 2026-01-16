@@ -126,7 +126,6 @@ main> section {
 }
 /* love&enjoy related style */
 .love-container{
-  display: flex;
   gap: 146px;
   margin: 130px auto;
 }
@@ -139,6 +138,39 @@ main> section {
    font-size: 2.8rem;
    font-weight: 700;
    margin-bottom: 24px;
+}
+.love-section p{
+  font-size: 1rem;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+.enjoy-card{
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+  padding: 10px 30px;
+  margin-bottom: 20px;
+}
+.enjoy-card h3{
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.years-section img{
+  max-width: 708px;
+  
+}
+.bt2{
+  max-width: 742px;
+  padding: 45px 42px;
+  height: 200px;
+  margin-top: -123px;
+  margin-left: -92px;
+}
+.year{
+  font-size: 4rem;
+  font-weight: 700;
+}
+.exp{
+  font-size: 1.4rem;
+
 }
 /* some facts related style */
 
@@ -212,7 +244,7 @@ main> section {
 /* footer related style */
 footer{
   max-width: 1440px;
-  margin: 254px auto;
+  margin: 150px auto;
 }
 small{
  font-size: 1.25rem;
@@ -225,7 +257,8 @@ small{
 @media screen and (max-width: 576px) {
   .navbar,
   .nav-link,
-  .photo-section {
+  .photo-section,
+  .love-container {
     flex-direction: column;
   }
   .image-container,
@@ -235,14 +268,36 @@ small{
   .paragrap-section {
     text-align: center;
   }
-  .fact-cointainer{
+  .years-section img{
     width: 100%;
+    margin: 0 auto;
+  }
+  .bt2{
+  max-width: 95%;
+  margin:20px;
+}
+.btn-2nd{
+  justify-content: center;
+}
+.love-section{
+  width: 95%;
+}
+.enjoy-card{
+  margin: 20px;
+}
+  .fact-cointainer{
+    width: 95%;
+    margin: 0 auto;
   }
   .sponsor-image{
     width: 100%;
     margin: 50px auto;
     justify-items: center;
 
+  }
+  .sponsor-container{
+    margin: 10px 20px;
+    text-align: center;
   }
   .card-cointainer{
      width: 97%;
@@ -254,12 +309,12 @@ small{
   }
   .footer-title{
     padding: 20px;
-    line-height: 0px;
+    line-height: 50px;
   }
 }
 @media screen and (min-width:576px) and (max-width: 992px) {
   .photo-section,
-  .navbar {
+  .navbar, .love-container {
     flex-direction: column;
   }
   .navbar,
@@ -270,6 +325,15 @@ small{
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
 }
+.bt2{
+  max-width: 95%;
+  margin:20px;
+}
+.years-section{
+    width: 100%;
+    text-align: center;
+    justify-items: center;
+  }
 .sponsor-image{
   grid-template-columns: repeat(2, 1fr);
   margin-left: 80px;
